@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { supabase } from "../utils/supabase";
 import styles from "../styles/Signup.module.css";
+import Head from "next/head";
 
 const Signup = () => {
   const initialState = {
@@ -17,6 +18,9 @@ const Signup = () => {
   };
   return (
     <div className={styles.container}>
+     <Head>
+      <title>Workout | SignUp</title>
+     </Head>
       <div className={styles.formContainer}>
         <input
           type="text"

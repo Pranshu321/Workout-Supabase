@@ -16,13 +16,14 @@
   height: 30rem;
   border: 1px solid #d8d8d8;
   border-radius: 0.4rem;
+  box-shadow: 10px 10px 20px white;
 }
 
 .input {
   width: 80%;
   height: 2rem;
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 25px 20px;
   border: 1px solid #f35815;
   border-radius: 0.4rem;
   outline: none;
@@ -33,7 +34,7 @@
   border: 1px solid #f35815;
   background-color: transparent;
   color: #d8d8d8;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2.3rem;
   border-radius: 0.4rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

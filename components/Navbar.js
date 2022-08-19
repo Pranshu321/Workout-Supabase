@@ -5,9 +5,12 @@ import { supabase } from "../utils/supabase";
 const Navbar = ({ session }) => {
   return (
     <div className={styles.container}>
-      <div>
-        <p className={styles.title}>Adrenargy</p>
-      </div>
+      <Link href="/"><a>
+        <div>
+          <p className={styles.title}>Workout</p>
+        </div>
+      </a>
+      </Link>
       {session?.user ? (
         <ul className={styles.navContent}>
           <Link href="/">

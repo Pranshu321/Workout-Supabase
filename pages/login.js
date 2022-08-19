@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { useState } from "react";
 import styles from "../styles/Login.module.css";
 import { supabase } from "../utils/supabase";
@@ -19,6 +20,10 @@ const Login = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
   return (
+    <>
+    <Head>
+     <title>Workout | Login</title>
+    </Head>
     <div className={styles.container}>
       <div className={styles.formContainer}>
         <input
@@ -53,6 +58,7 @@ const Login = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

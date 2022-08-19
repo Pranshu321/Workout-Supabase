@@ -2,6 +2,7 @@ import { supabase } from "../utils/supabase";
 import { useState, useEffect } from "react";
 import styles from "../styles/Create.module.css";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Create = () => {
   const initialState = {
@@ -38,6 +39,9 @@ const Create = () => {
 
   return (
     <>
+      <Head>
+        <title>Create Workout</title>
+      </Head>
       <div className={styles.container}>
         <div className={styles.form}>
           <p className={styles.title}>Create a New Workout</p>
